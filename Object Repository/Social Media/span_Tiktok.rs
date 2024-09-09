@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Tiktok</name>
+   <tag></tag>
+   <elementGuidId>780831f8-6acc-403c-a66f-6310517ce50d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Twitter'])[1]/following::span[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a:nth-of-type(3) > span.ec-fs-5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Tiktok&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>dfeb102b-3476-4e38-869b-05b0b869618b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ec-fs-5</value>
+      <webElementGuid>0e4f8aa9-51f8-4893-b880-b890497aeec1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Tiktok</value>
+      <webElementGuid>18216d0e-fc86-4956-b3e9-dd3008755caf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[1]/app-dashboard[1]/div[@class=&quot;col-12&quot;]/app-footer[1]/footer[@class=&quot;ec-bg-primary-900 text-white&quot;]/div[@class=&quot;ec-container-sm&quot;]/div[@class=&quot;d-flex flex-column flex-column flex-lg-row px-lg-4 px-0 text-center text-lg-start text-md-start&quot;]/div[@class=&quot;col-4 d-flex ec-row px-4&quot;]/div[@class=&quot;col-12 text-white d-flex flex-column gap-3 py-4&quot;]/a[3]/span[@class=&quot;ec-fs-5&quot;]</value>
+      <webElementGuid>3e952905-ac78-4357-8105-3a22d83d06df</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Twitter'])[1]/following::span[1]</value>
+      <webElementGuid>ebb7125a-aade-4ed8-8087-b4392192c2dc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Instagram'])[1]/following::span[2]</value>
+      <webElementGuid>fbf2ec41-041f-4073-8f8e-5a29316891a1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2024 ENIGMACAMP'])[1]/preceding::span[1]</value>
+      <webElementGuid>3fb32b67-6e41-4267-bb31-178454f379f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Tiktok']/parent::*</value>
+      <webElementGuid>cdbbcf88-9d87-4f75-a788-7183a4a4ca83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[3]/span</value>
+      <webElementGuid>8c25c139-70cd-443e-acf2-8e8b35c2519a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Tiktok' or . = 'Tiktok')]</value>
+      <webElementGuid>44bc13bb-e10a-48a3-a47a-03ea9a1faac5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

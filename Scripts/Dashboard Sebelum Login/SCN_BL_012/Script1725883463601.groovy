@@ -25,17 +25,21 @@ WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'), 0)
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Dashboard/Course/button_Add To Cart'), 0)
 
-if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'))) {
-	println("Arrow Right button on course appeared")
+
+if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Dashboard/Course/button_Add To Cart'))) {
+	println("Button add to cart is Exist")
 	WebUI.delay(2)
-	
-	for (int i = 0; i<3; i++) {
-		WebUI.click(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'))
-		WebUI.delay(2)
-		println("Success click arrow right button: " + (i+1) + " times")
+	WebUI.click(findTestObject('Object Repository/Page_Dashboard/Course/button_Add To Cart'))
+	WebUI.delay(2)
+	if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Login/text_Log In'))) {
+		println("Success diarahkan ke halaman login saat mengklik add to cart sebelum login")
+	} else {
+		println("Gagal diarahkan ke halaman login")
 	}
+} else {
+	println("Button not found")
 }
 
 WebUI.closeBrowser()

@@ -14,7 +14,10 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable
+
+import static org.mockito.Mockito.verify
+
 import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
@@ -25,18 +28,18 @@ WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'), 0)
-
-if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'))) {
-	println("Arrow Right button on course appeared")
+if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Dashboard/Package/btn_Add To Cart'))) {
+	println("Button add to cart is Exist")
 	WebUI.delay(2)
-	
-	for (int i = 0; i<3; i++) {
-		WebUI.click(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'))
-		WebUI.delay(2)
-		println("Success click arrow right button: " + (i+1) + " times")
-	}
+	WebUI.click(findTestObject('Object Repository/Page_Dashboard/Package/btn_Add To Cart'))
+	WebUI.delay(2)
+	if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Login/text_Log In'))) {
+		println("Success diarahkan ke halaman login saat mengklik add to cart sebelum login")
+	} else {
+		println("Gagal diarahkan ke halaman login")
+	}	
+} else {
+	println("Button not found")
 }
 
 WebUI.closeBrowser()
-

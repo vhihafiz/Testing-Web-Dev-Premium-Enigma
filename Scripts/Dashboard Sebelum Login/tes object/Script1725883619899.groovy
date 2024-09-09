@@ -13,6 +13,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
@@ -25,18 +26,4 @@ WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'), 0)
-
-if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'))) {
-	println("Arrow Right button on course appeared")
-	WebUI.delay(2)
-	
-	for (int i = 0; i<3; i++) {
-		WebUI.click(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'))
-		WebUI.delay(2)
-		println("Success click arrow right button: " + (i+1) + " times")
-	}
-}
-
-WebUI.closeBrowser()
-
+WebUI.click(findTestObject('Object Repository/Page_Dashboard/Course/btn_See more'))

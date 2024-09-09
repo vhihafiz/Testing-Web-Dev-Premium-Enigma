@@ -25,17 +25,18 @@ WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'), 0)
+WebUI.scrollToElement(findTestObject('Object Repository/Social Media/span_Twitter'), 0)
 
-if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'))) {
-	println("Arrow Right button on course appeared")
+WebUI.delay(2)
+
+if (WebUI.verifyElementVisible(findTestObject('Object Repository/Social Media/span_Twitter'))) {
+	println("Text Button Twitter is Exist")
 	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/Social Media/span_Twitter'))
+	WebUI.delay(10)
 	
-	for (int i = 0; i<3; i++) {
-		WebUI.click(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'))
-		WebUI.delay(2)
-		println("Success click arrow right button: " + (i+1) + " times")
-	}
+} else {
+	println("Text button Twitter not found")
 }
 
 WebUI.closeBrowser()

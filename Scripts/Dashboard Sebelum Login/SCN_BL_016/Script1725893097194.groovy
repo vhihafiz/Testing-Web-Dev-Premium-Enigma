@@ -25,17 +25,22 @@ WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'), 0)
+//WebUI.scrollToElement(findTestObject('Object Repository/Page_Dashboard/Course/btn_See more'), 0)
 
-if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'))) {
-	println("Arrow Right button on course appeared")
+WebUI.delay(2)
+
+if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Dashboard/Package/btn_See more'))) {
+	println("Button see more is exist")
+	
 	WebUI.delay(2)
 	
-	for (int i = 0; i<3; i++) {
-		WebUI.click(findTestObject('Object Repository/Page_Dashboard/Course/btn_Next'))
-		WebUI.delay(2)
-		println("Success click arrow right button: " + (i+1) + " times")
-	}
+	WebUI.click(findTestObject('Object Repository/Page_Dashboard/Package/btn_See more'))
+	println("Success click button see more")
+	
+	WebUI.delay(10)
+	
+} else {
+	println("Button see more not found")
 }
 
 WebUI.closeBrowser()

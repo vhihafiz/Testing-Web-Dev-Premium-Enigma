@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Instagram</name>
+   <tag></tag>
+   <elementGuidId>773f466b-5976-4dfa-8ce9-53f56bf2505d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='REACH US ON'])[1]/following::span[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a > span.ec-fs-5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Instagram&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>9705bc00-b6a4-424e-a203-0ab0a61db53b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ec-fs-5</value>
+      <webElementGuid>f33f504e-cfe3-4c8b-8658-26b3641585ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Instagram</value>
+      <webElementGuid>b42e9718-edcb-4eb0-ab21-9379fa102e7a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[1]/app-dashboard[1]/div[@class=&quot;col-12&quot;]/app-footer[1]/footer[@class=&quot;ec-bg-primary-900 text-white&quot;]/div[@class=&quot;ec-container-sm&quot;]/div[@class=&quot;d-flex flex-column flex-column flex-lg-row px-lg-4 px-0 text-center text-lg-start text-md-start&quot;]/div[@class=&quot;col-4 d-flex ec-row px-4&quot;]/div[@class=&quot;col-12 text-white d-flex flex-column gap-3 py-4&quot;]/a[1]/span[@class=&quot;ec-fs-5&quot;]</value>
+      <webElementGuid>5f985332-b698-4968-9524-fae688126c39</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='REACH US ON'])[1]/following::span[1]</value>
+      <webElementGuid>453ca6dd-7d07-4251-975b-ab4da2dcdbcf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Programs'])[1]/following::span[2]</value>
+      <webElementGuid>25005149-0a9c-4e04-8baa-1853a0904890</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Twitter'])[1]/preceding::span[1]</value>
+      <webElementGuid>2fdb8cce-d138-490f-8efc-72441526e4ab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tiktok'])[1]/preceding::span[2]</value>
+      <webElementGuid>63b30f48-de54-463b-9ed2-26b7e8ed9156</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Instagram']/parent::*</value>
+      <webElementGuid>649c730e-71d0-4041-a319-69f002869ac1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/span</value>
+      <webElementGuid>4520644e-43cc-45c8-a961-3c9766daf6c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Instagram' or . = 'Instagram')]</value>
+      <webElementGuid>05128815-89de-4a5b-8b74-4714d4c2817e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
