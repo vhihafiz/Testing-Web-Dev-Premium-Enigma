@@ -23,16 +23,17 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.click(findTestObject('Object Repository/Page_Register/btn_Register'))
+WebUI.delay(2)
 
-// Validate and verify if success go to register page
-if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Register/Text_Create New Account'), 0, FailureHandling.OPTIONAL)) {
-	println("Success to register Page")
+WebUI.click(findTestObject('Object Repository/Page_Dashboard/Course/a_Course'))
+
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Dashboard/Course/text_Course'), 3, FailureHandling.OPTIONAL)) {
+	println("Success to course Page")
 } else {
-	println("Failed to register Page")
+	println("Failed to course Page")
 }
 
 WebUI.closeBrowser()
-	
+
 
 

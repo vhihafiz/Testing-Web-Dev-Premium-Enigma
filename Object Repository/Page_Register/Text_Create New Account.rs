@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>text_Log In</name>
+   <name>text_Create New Account</name>
    <tag></tag>
-   <elementGuidId>0e2a7fcf-024c-4e65-bfd5-965bd36af8fc</elementGuidId>
+   <elementGuidId>b0402b44-e600-4ddb-9d63-58fbc01f93b0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//section[@id='home-banner']/div/div[2]/div/div/div[2]/h1</value>
+         <value>//section[@id='register-banner']/div/div/div/div[2]/div/div/div[2]/div/h1</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -18,7 +18,7 @@
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=heading[name=&quot;Log In&quot;i]</value>
+         <value>internal:role=heading[name=&quot;Create New Account&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h1</value>
-      <webElementGuid>7d7c9790-7d40-4e30-875b-ceb19deacb66</webElementGuid>
+      <webElementGuid>b4de64d3-8c66-4ab8-8223-f91aaa004e82</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,47 +37,55 @@
       <name>class</name>
       <type>Main</type>
       <value>subtitle-1 ec-primary-500</value>
-      <webElementGuid>f04f4483-4afb-4d8a-a40d-c158091237a9</webElementGuid>
+      <webElementGuid>bc6a6ba3-8a40-4a70-90e5-e4d11726da9f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Log In</value>
-      <webElementGuid>2dbfafe7-ed4e-4410-93ff-33fe75da3e55</webElementGuid>
+      <value>Create New Account</value>
+      <webElementGuid>d0f4bbe3-e321-478c-8b55-9ddaa3c83b37</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;home-banner&quot;)/div[@class=&quot;ec-row&quot;]/div[@class=&quot;ec-col-12 ec-col-md-4 d-flex&quot;]/div[@class=&quot;ec-row&quot;]/div[@class=&quot;ec-col-12 d-flex flex-column justify-content-end&quot;]/div[@class=&quot;text-center py-2&quot;]/h1[@class=&quot;subtitle-1 ec-primary-500&quot;]</value>
-      <webElementGuid>96f12cc9-6801-40b9-973e-f2496b6863c0</webElementGuid>
+      <value>id(&quot;register-banner&quot;)/div[@class=&quot;d-flex flex-column&quot;]/div[@class=&quot;col-11 mx-auto&quot;]/div[@class=&quot;d-flex flex-md-row flex-column container mx-auto vh-100&quot;]/div[@class=&quot;col-12 col-md-4 justify-content-center right-side&quot;]/div[@class=&quot;ec-row py-5&quot;]/div[@class=&quot;col-12 d-flex flex-column justify-content-center&quot;]/div[2]/div[@class=&quot;text-center&quot;]/h1[@class=&quot;subtitle-1 ec-primary-500&quot;]</value>
+      <webElementGuid>ad262114-b98f-4563-9d31-d6597b79491a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//section[@id='home-banner']/div/div[2]/div/div/div[2]/h1</value>
-      <webElementGuid>af8f52d3-62ab-4d2e-abc1-f00e5b8d2eda</webElementGuid>
+      <value>//section[@id='register-banner']/div/div/div/div[2]/div/div/div[2]/div/h1</value>
+      <webElementGuid>9d18100c-380d-4eda-82e4-4a48036d41aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create an account'])[1]/preceding::h1[1]</value>
-      <webElementGuid>d6f75e2d-d734-41ea-a3ec-8b58c7c3f127</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Full name'])[1]/preceding::h1[1]</value>
+      <webElementGuid>4b84d470-0636-4a48-866c-13e8499fd18b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Log In']/parent::*</value>
-      <webElementGuid>940ff364-1b0b-429f-aed2-a1ed9df38882</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/preceding::h1[1]</value>
+      <webElementGuid>f70c3356-ff62-414a-9cd6-b1583cf27141</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Create New Account']/parent::*</value>
+      <webElementGuid>84706a02-95fb-449f-a2f9-8df4eb936ad5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,14 +93,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//h1</value>
-      <webElementGuid>01c12f98-e3f6-4eae-8c2c-723c26b72bb2</webElementGuid>
+      <webElementGuid>9e89f652-2b3a-41a6-a41c-df85c9e481d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//h1[(text() = 'Log In' or . = 'Log In')]</value>
-      <webElementGuid>3d03ab4e-9346-4ed9-ae23-283c040045b5</webElementGuid>
+      <value>//h1[(text() = 'Create New Account' or . = 'Create New Account')]</value>
+      <webElementGuid>bde191b0-db34-4a6b-bb5c-520e6209ce6a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
