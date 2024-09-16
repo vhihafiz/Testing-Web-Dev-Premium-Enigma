@@ -23,23 +23,11 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/Page_Login/btn_Login'))
 
-WebUI.scrollToElement(findTestObject('Object Repository/After Login/Course/button_Add To Cart'), 0)
+WebUI.setText(findTestObject('Object Repository/Page_Login/Page_Premium Class/form_Email'), 'vhierdy.verdi@gmail.com')
 
-if (WebUI.verifyElementVisible(findTestObject('Object Repository/After Login/Course/button_Add To Cart'))) {
-	println("Button add to cart is Exist")
-	WebUI.delay(5)
-	WebUI.click(findTestObject('Object Repository/After Login/Course/button_Add To Cart'))
-	WebUI.delay(5)
-	if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Login/text_Log In'))) {
-		println("Success diarahkan ke halaman login saat mengklik add to cart sebelum login")
-	} else {
-		println("Gagal diarahkan ke halaman login")
-	}
-} else {
-	println("Button not found")
-}
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login/Page_Premium Class/form_Password'), 'JogIyWpDPYBoArcuXTHieYXGZw1rEljc')
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Page_Login/Page_Premium Class/button_Login'))
 

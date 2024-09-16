@@ -17,29 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
-
-WebUI.navigateToUrl(GlobalVariable.url)
+WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
 
-WebUI.scrollToElement(findTestObject('Object Repository/After Login/Course/button_Add To Cart'), 0)
+WebUI.click(findTestObject('Object Repository/Page_Dashboard/Course/btn_See more'))
 
-if (WebUI.verifyElementVisible(findTestObject('Object Repository/After Login/Course/button_Add To Cart'))) {
-	println("Button add to cart is Exist")
-	WebUI.delay(5)
-	WebUI.click(findTestObject('Object Repository/After Login/Course/button_Add To Cart'))
-	WebUI.delay(5)
-	if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Login/text_Log In'))) {
-		println("Success diarahkan ke halaman login saat mengklik add to cart sebelum login")
-	} else {
-		println("Gagal diarahkan ke halaman login")
-	}
-} else {
-	println("Button not found")
-}
+WebUI.delay(10)
 
 WebUI.closeBrowser()
 
