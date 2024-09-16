@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SCN_AFTER_LOGIN_019</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e656d8cb-492e-433c-86d4-6936dc6d1427</testCaseGuid>
+</TestCaseEntity>

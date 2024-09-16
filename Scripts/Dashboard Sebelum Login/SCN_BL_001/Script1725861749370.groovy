@@ -23,10 +23,10 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.click(findTestObject('Page_Login/btn_Login'))
+WebUI.click(findTestObject('Page_Dashboard/Login/btn_Login'))
 
 // Validate and verify if success go to login page
-if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Login/Text_Log In'), 3, FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_DasboardLogin/Text_Log In'), 3, FailureHandling.OPTIONAL)) {
 	println("Success to login Page")
 } else {
 	println("Failed to login Page")

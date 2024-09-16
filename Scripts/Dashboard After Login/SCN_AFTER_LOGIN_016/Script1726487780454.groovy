@@ -17,17 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Workflow Global/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.delay(5)
 
-WebUI.navigateToUrl(GlobalVariable.url)
+if(WebUI.verifyElementPresent(findTestObject('Object Repository/After Login/Transaction/btn_Transaction'), 3)) {
+	println("Transaction is exist")
+	WebUI.click(findTestObject('Object Repository/After Login/Transaction/btn_Transaction'))
+	WebUI.delay(5)
+	println("Success click transaction")
+} else {
+	println("Transaction is not exist")
+}
 
-WebUI.click(findTestObject('Object Repository/Page_Login/btn_Login'))
+if(WebUI.verifyElementPresent(findTestObject('Object Repository/After Login/Global/btn_Back'), 3)) {
+	println("Button back is exist")
+	WebUI.click(findTestObject('Object Repository/After Login/Global/btn_Back'))
+	WebUI.delay(5)
+	println("Success click back")
+} else {
+	println("Button back is not exist")
+}
 
-WebUI.setText(findTestObject('Object Repository/Page_Login/Page_Premium Class/form_Email'), 'vhierdy.verdi@gmail.com')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login/Page_Premium Class/form_Password'), 'JogIyWpDPYBoArcuXTHieYXGZw1rEljc')
-
-WebUI.click(findTestObject('Object Repository/Page_Login/Page_Premium Class/button_Login'))
-
+WebUI.closeBrowser()

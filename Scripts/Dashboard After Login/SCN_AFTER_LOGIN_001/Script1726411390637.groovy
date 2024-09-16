@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Workflow Global/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Dashboard/Package/btn_See more'), 3)) {
 	println("Button see more is exist")

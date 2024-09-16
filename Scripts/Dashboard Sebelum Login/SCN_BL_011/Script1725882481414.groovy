@@ -33,7 +33,7 @@ if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Dashboard/
 	WebUI.delay(2)
 	WebUI.click(findTestObject('Object Repository/Page_Dashboard/Package/btn_Add To Cart'))
 	WebUI.delay(2)
-	if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Login/text_Log In'))) {
+	if (WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Dashboard/Login/text_Log In'))) {
 		println("Success diarahkan ke halaman login saat mengklik add to cart sebelum login")
 	} else {
 		println("Gagal diarahkan ke halaman login")

@@ -17,26 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Workflow Global/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
 
-WebUI.delay(5)
+WebUI.maximizeWindow()
 
-WebUI.scrollToElement(findTestObject('Object Repository/After Login/Course/button_Add To Cart'), 3)
+WebUI.navigateToUrl(GlobalVariable.url)
 
-if (WebUI.verifyElementPresent(findTestObject('Object Repository/After Login/Course/button_Add To Cart'), 3)) {
-	println("Button add to cart is exist")
-	WebUI.delay(5)
-	WebUI.click(findTestObject('Object Repository/After Login/Course/button_Add To Cart'))
-	println("Success click button add to cart")
-} else {
-	println("Button add to cart is not exist")
-}
+WebUI.click(findTestObject('Object Repository/Page_Dashboard/Login/btn_Login'))
 
-WebUI.delay(10)
+WebUI.setText(findTestObject('Object Repository/Page_Login/form_Email'), 'vhierdy.verdi@gmail.com')
 
-// Scroll to the top of page
-WebUI.executeJavaScript('window.scrollTo(0, 0);', null)
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login/form_Password'), 'JogIyWpDPYBoArcuXTHieYXGZw1rEljc')
 
-WebUI.delay(10)
+WebUI.click(findTestObject('Object Repository/Page_Login/button_Login'))
 
-WebUI.closeBrowser()

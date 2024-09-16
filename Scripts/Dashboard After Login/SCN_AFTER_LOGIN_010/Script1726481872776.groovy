@@ -21,22 +21,19 @@ WebUI.callTestCase(findTestCase('Workflow Global/Login'), [:], FailureHandling.S
 
 WebUI.delay(5)
 
-WebUI.scrollToElement(findTestObject('Object Repository/After Login/Course/button_Add To Cart'), 3)
-
-if (WebUI.verifyElementPresent(findTestObject('Object Repository/After Login/Course/button_Add To Cart'), 3)) {
-	println("Button add to cart is exist")
+if(WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Dashboard/Cart/btn_Cart'), 3)) {
+	println("Button cart is exist")
+	WebUI.click(findTestObject('Object Repository/Page_Dashboard/Cart/btn_Cart'))
 	WebUI.delay(5)
-	WebUI.click(findTestObject('Object Repository/After Login/Course/button_Add To Cart'))
-	println("Success click button add to cart")
-} else {
-	println("Button add to cart is not exist")
+	println("Success click cart")
+	
 }
 
-WebUI.delay(10)
-
-// Scroll to the top of page
-WebUI.executeJavaScript('window.scrollTo(0, 0);', null)
-
-WebUI.delay(10)
+if(WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Dashboard/Cart/btn_Back'), 3)) {
+	println("Button back is exist")
+	WebUI.click(findTestObject('Object Repository/Page_Dashboard/Cart/btn_Back'))
+	WebUI.delay(5)
+	println("Success click back")	
+}
 
 WebUI.closeBrowser()
